@@ -1,0 +1,24 @@
+
+<div class="background">
+
+<p class="errormessage">{{ message }}</p>
+
+
+
+<form class="" action="/register" method="post">
+    <p>NAME:</p>
+    <input type="text" name="firstnameuser" value="">
+    <p>LAST NAME:</p>
+    <input type="text" name="lastnameuser" value="">
+    <p>E-MAIL:</p>
+    <input type="email" name="emailuser" value="">
+    <p>PASSWORD:</p>
+    <input type="password" name="password" value="">
+    <input name='_csrf' value='{{csrfToken}}' type='hidden'>
+    <input class="submit" type="submit" name="submit" value="SUBMIT">
+</form>
+
+
+<div class"login">If you are already a member, please <a href="/login">LOGIN</a></div>
+
+</div>

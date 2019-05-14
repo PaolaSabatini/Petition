@@ -1,0 +1,42 @@
+<div class="background">
+
+
+
+<p id='signers'>THESE ARE THE AMAZING PEOPLE THAT HAD CONTRIBUTE WITH US</p>
+
+
+    <ul>
+    {{#signers}}
+    {{#if url}}
+        <li>
+
+            <a href="{{ url }}">
+
+                    {{ firstnameuser }} {{ lastnameuser }}
+
+
+            </a>,
+
+            {{ age }},
+            <a href='/signers/{{ city }}'>
+                {{ city }}
+            </a>
+        </li>
+
+    {{else}}
+
+    <li>
+        {{ firstnameuser }} {{ lastnameuser }}, {{ age }},
+        <a href='/signers/{{ city }}'>
+            {{ city }}
+        </a>
+    </li>
+
+    {{/if}}
+
+    {{/signers}}
+    </ul>
+
+
+
+    </div>

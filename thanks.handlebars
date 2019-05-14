@@ -1,0 +1,15 @@
+    <div class="background">
+
+        <p id="thanks">Thank you {{ name }} for your commitment with this noble cause</p>
+
+        <img src={{signature}}>
+
+
+        <form class="thanksform" action="" method="post">
+            <input name='_csrf' value='{{csrfToken}}' type='hidden'>
+            <a href="/signers">See all the {{ id }} amazing contributors</a>
+            <a href="/update">Update your Profile</a>
+            <input id="delete" type="submit" name="submit" value="Delete Your Signature">
+        </form>
+
+    </div>

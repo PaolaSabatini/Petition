@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    firstnameuser VARCHAR NOT NULL,
+    lastnameuser VARCHAR NOT NULL,
+    emailuser VARCHAR UNIQUE NOT NULL,
+    password VARCHAR NOT NULL,
+    created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
